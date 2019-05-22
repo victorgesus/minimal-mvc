@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <!--
-|--------------------------------
+|
 | HEAD TEMPLATE
-|--------------------------------
+|
 | A head template to show how to load assets and other stuff.
 | You can load assets using the url on config.
 | @usage:   $this->config[url];/assets/css/nameofyourcss

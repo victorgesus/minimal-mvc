@@ -1,7 +1,7 @@
 <!--
-|-------------------------------------
+|
 | FOOTER TEMPLATE
-|-------------------------------------
+|
 | A footer template showing how to load assets from js folder, using Bootstrap 
 | as an example. -->
 

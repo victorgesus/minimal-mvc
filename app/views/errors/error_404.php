@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <!--
-|-------------------------------------
+|
 | ERROR 404
-|-------------------------------------
+|
 | An error page loaded by error_404() method on Controller.php. 
 | @warning: To change this file name or directory rewrite error_404() method. -->
 
