@@ -19,15 +19,19 @@ class App{
 	
 		$route = explode('/',URI);
 		$index = explode('/', $this->config['index']);
+
+		if(empty($this->config['folder'])){$first = '1'; $second = '2';}
+		else{$first = '2'; $second = '3';}
+
 		
-		if(empty($route[2]) or $route[2]=='index.php'){
+		if(empty($route[$first]) or $route[$first]=='index.php'){
 			$method = $index[1];
 			$home=new $index[0]();
 			$home->$method();
 		}
 		else{
 			$router = new router(); 
-			$router->request($route);
+			$router->request($route, $first, $second);
 		}
 	}
 }

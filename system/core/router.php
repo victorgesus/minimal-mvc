@@ -13,14 +13,14 @@ class Router extends Controller{
 	|----------------------------------------------
 	| Verify if the route is /thisformat or /this/format */
 
-	function request($route){
+	function request($route, $first, $second){
 
-		if(!empty($route[3])){
-			$url = $route[2] . '/' . $route[3];
+		if(!empty($route[$second])){
+			$url = $route[$first] . '/' . $route[$second];
 			$this->load_route($url);
 		}
 		else{
-			$url = $route[2];
+			$url = $route[$first];
 			$this->load_route($url);
 		}
 	}
