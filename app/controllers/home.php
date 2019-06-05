@@ -18,4 +18,5 @@ class Home extends Controller{
 		$this->view('example');
 		$this->view('templates/footer');
 	}
+	dsadsa
 }
