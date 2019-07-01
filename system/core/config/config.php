@@ -16,7 +16,7 @@ $this->config=array(
 |-------------------------------------------------
 | Base URL of your project */
 
-'url' => 'http://localhost/minimal',
+'url' => 'http://localhost/minimal-mvc',
 
 /*
 |--------------------------------------------------
@@ -24,7 +24,7 @@ $this->config=array(
 |--------------------------------------------------
 | Root folder of your project */
 
-'folder'=> 'minimal',
+'folder'=> 'minimal-mvc',
 
 /*
 |-------------------------------------------------
