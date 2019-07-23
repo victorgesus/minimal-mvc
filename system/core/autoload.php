@@ -14,10 +14,12 @@ class Autoload{
 
 	public static function model($class){
 		$file= ROOT . '/app/model/'. $class . '.php';
-		require_once $file;
+		if(file_exists($file))
+			require_once $file;
 	}
 	public static function core($class){
 		$file= ROOT . '/system/core/'. $class . '.php';
-		require_once $file;
+		if(file_exists($file))
+			require_once $file;
 	}
 }
