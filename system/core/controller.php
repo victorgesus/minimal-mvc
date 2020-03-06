@@ -54,7 +54,6 @@ abstract class Controller{
 
 	function view($path){
 		require(ROOT . '/app/views/'. $path .'.php');
-		echo '<br>';
 	}
 
 	/*

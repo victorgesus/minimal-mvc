@@ -2,7 +2,7 @@
 
 spl_autoload_register('Autoload::Controllers');
 spl_autoload_register('Autoload::Core');
-spl_autoload_register('Autoload::Model');
+spl_autoload_register('Autoload::Models');
 
 class Autoload{
 
@@ -12,8 +12,8 @@ class Autoload{
 			require_once $file;
 	}
 
-	public static function model($class){
-		$file= ROOT . '/app/model/'. $class . '.php';
+	public static function models($class){
+		$file= ROOT . '/app/models/'. $class . '.php';
 		if(file_exists($file))
 			require_once $file;
 	}
