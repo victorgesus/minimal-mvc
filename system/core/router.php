@@ -34,9 +34,13 @@ class Router extends Controller{
 	function load_route($url){
 		
 		$route_list = $this->routes;
+
+		$url_param = explode('?',$url);
+		
+		$method = $url_param[0];
 	
-		if(isset($route_list[$url])){
-			$dest = explode('/', $route_list[$url]);
+		if(isset($route_list[$method])){
+			$dest = explode('/', $route_list[$method]);
 			$this->check_controller($dest);
 		}
 		else{
